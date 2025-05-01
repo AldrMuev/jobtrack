@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm run build"
+  command = "npm ci && npm run build"
   publish = "dist"
   functions = "netlify/functions"
 
@@ -7,6 +7,7 @@
   NODE_VERSION = "18"
   NPM_FLAGS = "--no-optional"
   NODE_ENV = "production"
+  CI = "true"
 
 [functions]
   included_files = ["node_modules/**/*"]
